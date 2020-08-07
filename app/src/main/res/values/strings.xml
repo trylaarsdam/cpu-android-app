@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">CPU</string>
-    <string name="edit_message">Enter a string</string>
+    <string name="edit_message">Enter a UUID</string>
     <string name="button_send">PUB</string>
-    <string name="button_subscribe">SUB</string>
+    <string name="button_subscribe">Connect</string>
+    <string name="clock_label">Clock</string>
 </resources>

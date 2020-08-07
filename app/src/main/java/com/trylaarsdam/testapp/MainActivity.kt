@@ -63,12 +63,12 @@ class MainActivity : AppCompatActivity() {
     /** Called when the user taps the Send button */
     fun sendMessage(view: View) {
         // Do something in response to button
-        val editText = findViewById<EditText>(R.id.editText)
-        val message = editText.text.toString()
+        //val editText = findViewById<EditText>(R.id.editText)
+       // val message = editText.text.toString()
         //val intent = Intent(this, DisplayMessageActivity::class.java).apply {
         //    putExtra(EXTRA_MESSAGE, message)
         //}
-        mqttClient.publish("cpu-android/testing" ,message)
+        //mqttClient.publish("cpu-android/testing" ,message)
         //startActivity(intent)
     }
 
