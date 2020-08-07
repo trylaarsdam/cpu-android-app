@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.CheckBox
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -76,5 +77,11 @@ class MainActivity : AppCompatActivity() {
         val editText2 = findViewById<EditText>(R.id.editText2)
         val message = editText2.text.toString()
         mqttClient.subscribe(message)
+    }
+
+    fun zeroToggle(view: View) {
+        val box = findViewById<CheckBox>(R.id.ctrl_0)
+        val message = box.isChecked.toString()
+        mqttClient.publish("cpu-android/ctrl_0", message)
     }
 }
